@@ -1,5 +1,5 @@
 ## Standards
-mini files containing best practices to follow in different languages. 
+mini files containing best practices to follow in different languages.
 
 
 ### SQL with SSMS
@@ -15,17 +15,23 @@ mini files containing best practices to follow in different languages.
  * Nulls and Joins
  * Execution Plan
  * Debugging
- * Etc.
 
-### Python
+### Usage
+ I would publish this code as package. Stay tuned.
 
-* TBD
+### Contributing
+Check out the [CONTRIBUTING] document.
+Thank you!
 
-### C#
+  [CONTRIBUTING]: CONTRIBUTING.md
 
-* TBD
+### Community
+Coming soon
 
-### Node.js
+### License
+Coming soon
 
-* TBD
+## Questions
+* If you have further questions, contact [me][me]
 
+  [me]: http://jmugz3.com
