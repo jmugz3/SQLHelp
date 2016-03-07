@@ -1,5 +1,5 @@
 ## Standards
-mini files containing best practices to follow in different languages.
+mini file containing best practices and helpful statements for SQL Server.
 
 
 ### SQL with SSMS
