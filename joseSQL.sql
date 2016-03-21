@@ -13,6 +13,8 @@ GO
 --dbcc cleantable
 --dbcc freeproccache
 GO
+----#### SERVER INFO
+--SELECT @@SERVERNAME
 
 ----#### STORED PROCEDURES METADATA INFO
 --sp_who 'StoreProcedure'
