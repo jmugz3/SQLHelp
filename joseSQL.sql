@@ -58,12 +58,23 @@ GO
 --  GO
 GO
 
-----#### GOTO (FOR ERRORS ONLY)
---IF 'ERROR' GOTO ERROR_LABEL
---ERROR_LABEL:
---  /* Statement */
---  RETURN -1
+----#### DEADLOCKS
+----Usually for Error 1205 (Transaction (Process ID %d) was deadlocked on {%Z} resources with another process and has been chosen as the deadlock victim. Rerun the transaction.)
+----Use Trace flags 1222 (error info by processes and then resources) and 1204 (error info formatted by each node)
+--DBCC TRACEON(1222, -1)
+----Look at process-list (spid/worker thread) and resource-list (resources that are owned/locked by participants)
+----And find the queries locking the resources.
+----Then run the queries using Database Tuning Advisor (DTA)
+----Extra : On pagelock, find dbid and associatedObjectId - which is your partitionId
+--SELECT DB_NAME(55); --55 is the dbid, it returns database name
+--SELECT *
+--from sys.dm_os_tasks
+--where task_state = 'RUNNING' --IN('SUSPENDED','RUNNING')
+
+--SELECT *
+--from sys.sysprocesses
 GO
+
 
 
 ----#### IDENTITY COLUMN
@@ -171,7 +182,7 @@ GO
 --FROM table t1
 --LEFT JOIN table t2 ON t1.col1 = t2.col3
 
----- Multiple Tables in Data Warehousing ***/
+---- Multiple Tables in Data Warehousing 
 --Use UNION and UNION ALL: Must have identical column names and data types.
 --Useful when dealing with history or logs in mutiple tables
 --SELECT * FROM table1
@@ -208,6 +219,14 @@ GO
 --SET NOEXEC OFF
 --GO
 GO
+
+----#### GOTO (FOR ERRORS ONLY)
+--IF 'ERROR' GOTO ERROR_LABEL
+--ERROR_LABEL:
+--  /* Statement */
+--  RETURN -1
+GO
+
 
 
 ----#### CODING STDS FROM THE WEB 
