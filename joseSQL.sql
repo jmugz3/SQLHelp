@@ -73,8 +73,19 @@ GO
 --from sys.dm_os_tasks
 --where task_state = 'RUNNING' --IN('SUSPENDED','RUNNING')
 
---SELECT *
---from sys.sysprocesses
+--SELECT * FROM sys.sysprocesses
+--DBCC INPUTBUFFER(pid)
+
+--select tl.request_session_id, tl.* from sys.dm_tran_locks tl
+--select wt.blocking_session_id, wt.* from sys.dm_os_waiting_tasks wt
+--select * from dbo.sysprocesses P 
+--where P.status not in ('background','sleeping')
+--and      P.cmd not in ('AWAITING COMMAND'
+--                    ,'MIRROR HANDLER'
+--                    ,'LAZY WRITER'
+--                    ,'CHECKPOINT SLEEP'
+--                    ,'RA MANAGER')
+
 GO
 
 
