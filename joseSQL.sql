@@ -69,9 +69,11 @@ GO
 ----Then run the queries using Database Tuning Advisor (DTA)
 ----Extra : On pagelock, find dbid and associatedObjectId - which is your partitionId
 --SELECT DB_NAME(55); --55 is the dbid, it returns database name
---SELECT *
---from sys.dm_os_tasks
---where task_state = 'RUNNING' --IN('SUSPENDED','RUNNING')
+--SELECT * from sys.dm_os_tasks
+--WHERE task_state = 'RUNNING' --IN('SUSPENDED','RUNNING')
+
+--SELECT * FROM sys.dm_exec_requests 
+--where blocking_session_id > 0 
 
 --SELECT * FROM sys.sysprocesses
 --DBCC INPUTBUFFER(pid)
