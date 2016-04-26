@@ -8,7 +8,7 @@ Looking for contribution in:
 - Best Practices Creating Unclustered index
 - Best Practices Creating Clustered index
 - Best Practices Using Sequencing
-- Best Practices Using Dynamic SQL
+- Best Practices On How To Replace Using Dynamic SQL
 - Query Optimization
 - Isolation Levels
 - Full Text Search
