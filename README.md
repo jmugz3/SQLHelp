@@ -5,19 +5,25 @@ mini file containing best practices and helpful statements for SQL Server.
 ### SQL with SSMS
  * Cascading Referential Integrity
  * Clearing cache
- * Stored Procedures - Common techniques and Metadata
+ * Stored Procedures - Common Techniques, Metadata and Search Text
  * Transactions
- * GOTO - For Errors Only
+ * Deadlocks
  * Identity Column and Constraints
+ * Aggregation
+ * Check Contraints
+ * Drop, Alter and Create
+ * Change Datatype of Column
  * CharIndex
  * Query Partition Clause
  * Duplicate Removal
  * Nulls and Joins
  * Execution Plan
  * Debugging
+ * GOTO - For Errors Only
+ * Web Standards Found So Far
 
 ### Usage
- I would publish this code as package. Stay tuned.
+ A single SQL file to keep common references. It may become a package in the future. 
 
 ### Contributing
 Check out the [CONTRIBUTING] document.
