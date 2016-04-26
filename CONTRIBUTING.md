@@ -1,16 +1,23 @@
 # Contribute.md
 
 ## Team members
-For now, it is just me, but anyone is welcome to join. Contact me
+For now, I am the main contributor, but feel free to contribute with a PR. 
 
 ## Adding new features
-Coming soon
+Looking for contribution in: 
+- Best Practices Creating Unclustered index
+- Best Practices Creating Clustered index
+- Best Practices Using Sequencing
+- Best Practices Using Dynamic SQL
+- Query Optimization
+- Isolation Levels
+- Full Text Search
 
 # Bug triage
-Coming soon
+If you find a bug in any of the statements, please open an issue and reference a test where the bug exists. 
 
 # Beta testing
-Coming soon
+Coming soon. 
 
 # Documentation
 I will try to automate it. 
