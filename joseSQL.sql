@@ -20,7 +20,7 @@ GO
 --sp_who 'StoreProcedure'
 --sp_columns SP_name
 --sp_helptext spName --> to see the code in text 
---sp_help bl_InsertInteraction --> to view name, owner, type and created datetime. 
+--sp_help <SPName> --> to view name, owner, type and created datetime. 
 --sp_depends spName --> view the dependencies of the stored procedure 
 --SELECT OBJECT_DEFINITION (OBJECT_ID(N'Prod_App.dbo.co_mst'));
 --SELECT * FROM sys.sql_modules WHERE object_id = (OBJECT_ID(N'Prod_App.dbo.co'));
